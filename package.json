@@ -1,1 +1,35 @@
-asdasd
+{
+  "name": "ng-cookie",
+  "version": "1.0.0",
+  "description": "cookie for angular",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "scripts": {
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "typings": "typings",
+    "prepublish": "typings install"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
+    "typings": "1.3.3"
+  },
+  "license": "MIT",
+  "author": "Pondol",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangta69/ng-cookie.git"
+  },
+  "keywords": [
+    "angular-cookie",
+    "cookie"
+  ],
+  "bugs": {
+    "url": "https://github.com/wangta69/ng-cookie/issues"
+  },
+  "homepage": "https://github.com/wangta69/ng-cookie#readme"
+}
