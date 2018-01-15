@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "cookie for angular",
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "scripts": {
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "tsc": "tsc",
@@ -31,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/wangta69/ng-cookie/issues"
   },
-  "homepage": "https://github.com/wangta69/ng-cookie#readme"
+  "homepage": "https://github.com/wangta69/ng-cookie#readme",
+  "directories": {
+    "test": "test"
+  }
 }
