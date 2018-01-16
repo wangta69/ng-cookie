@@ -1,31 +1,33 @@
 {
   "name": "ng-cookie",
-  "version": "1.0.4",
-  "description": "cookie for angular",
-  "main": "./lib/cookie/cookie.service.js",
-  "typings": "./lib/cookie/cookie.service.d.ts",
-  "dependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "1.0.8",
+  "description": "cookie",
+  "main": "./dist/cookie.service.js",
+  "types": "./dist/cookie.service.d.ts",
+  "directories": {
+    "test": "test"
   },
-  "devDependencies": {
+  "dependencies": {
     "typescript": "^2.6.2"
   },
-  "license": "MIT",
-  "author": "Pondol",
+  "devDependencies": {"typescript": "^2.6.2"},
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wangta69/ng-cookie.git"
   },
   "keywords": [
-    "angular-cookie",
-    "cookie"
+    "cookie",
+    "angular"
   ],
+  "author": "pondol",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wangta69/ng-cookie/issues"
   },
-  "homepage": "https://github.com/wangta69/ng-cookie#readme",
-  "directories": {
-    "test": "test"
-  }
+  "homepage": "https://github.com/wangta69/ng-cookie#readme"
 }

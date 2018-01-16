@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * @license
  *
@@ -9,8 +9,21 @@ exports.__esModule = true;
 var CookieService = /** @class */ (function () {
     function CookieService() {
         this.isConsented = false;
+        /*
+            private consent(isConsent: boolean, e: any) {
+                if (!isConsent) {
+                    return this.isConsented;
+                } else if (isConsent) {
+                    this.set_cookie(COOKIE_CONSENT, '1', COOKIE_CONSENT_EXPIRE_DAYS);
+                    this.isConsented = true;
+                    e.preventDefault();
+                }
+            }
+            */
     }
-
+    //constructor() {
+    //this.isConsented = this.getCookie(COOKIE_CONSENT) === '1';
+    //}
     CookieService.prototype.get_cookie = function (name) {
         var ca = document.cookie.split(';');
         var caLen = ca.length;
