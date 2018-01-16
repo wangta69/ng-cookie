@@ -5,7 +5,7 @@
 npm install ng-cookie
 ```
 ``` app.module.ts
-import { CookieService } from 'ng-cookie/src/services.d'
+import { CookieService } from 'ng-cookie'
 @NgModule({
   providers: [  CookieService ]
 })
@@ -13,6 +13,6 @@ import { CookieService } from 'ng-cookie/src/services.d'
 ```
 
 ``` app.componet.ts
-import { CookieService } from 'ng-cookie/src/services.d'
+import { CookieService } from 'ng-cookie'
 
 ```
