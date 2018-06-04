@@ -10,7 +10,9 @@ export class CookieService {
     //constructor() {
         //this.isConsented = this.getCookie(COOKIE_CONSENT) === '1';
     //}
-
+    /**
+    *@return String or null
+    */
     public get_cookie(name: string) {
         let ca: Array<string> = document.cookie.split(';');
         let caLen: number = ca.length;
@@ -23,7 +25,7 @@ export class CookieService {
                 return c.substring(cookieName.length, c.length);
             }
         }
-        return '';
+        return null;
     }
 
     public delete_cookie(name: string) {
